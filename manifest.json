@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "微信读书-护眼色",
+  "version": "1.0",
+  "description": "",
+  "author": "",
+  "icons": {
+      "128": "icon.png"
+  },
+  "content_scripts":  [
+      {
+          "matches": [ "https://weread.qq.com/web/reader/*" ],
+          "js": [ "content-script.js" ]
+      }
+  ],
+  "browser_action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "storage"
+  ]
+}
